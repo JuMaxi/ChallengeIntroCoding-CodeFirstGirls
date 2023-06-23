@@ -11,16 +11,13 @@ Note, the limit of the numbers was limited until 25, because a greater number wo
 flowchart TD
 id1([Start])
 id2["LookUpTable&lbrack;&rbrack;
-int Factorial"]
+long Factorial"]
 id3[/Input Number/]
 id4{Number != E}
 id5{LookUpTable Contains Number}
 id7{"Number < 0 ||
  Number > 25"}
-id8[/"Return Exception: 
-The Number must be 
-greater than 0 and
-less or equal 25."/]
+id8[/"Return Exception"/]
 id9{Number = 0}
 id10["Factorial = 1
 LookUpTable += Factorial"]
@@ -69,7 +66,7 @@ style id12 fill:#CA70E0,stroke:black,stroke-width:2px,color:black;
 ## Pseudo code
 ```basic
 READ LookUpTable
-READ int Factorial
+READ long Factorial
 READ NumberInput
 WHILE NumberInput!= "E"
 	IF LookUpTable Contains NumberInput
@@ -79,7 +76,7 @@ WHILE NumberInput!= "E"
 			RETURN Exception "The NumberInput must be greater than 0 and less or equal 25"
 		ENDIF
 		IF NumberInput = 0
-			int Factorial = 1
+			Factorial = 1
 			LookUpTable += Factorial
 		ELSE
 			N = NumberInput - 1
@@ -87,7 +84,7 @@ WHILE NumberInput!= "E"
 				NumberInput = NumberInput * N	
 				N = N - 1
 			ENDWHILE
-		int Factorial = NumberInput
+		Factorial = NumberInput
 		ENDIF
 	LookUpTable += Factorial
 	WRITE Factorial
