@@ -2,6 +2,10 @@
 This program will search a number in a sorted matrix and report the exact location of this number. 
 If the number is not in the matrix will return the number was not found.
 
+My first attempt in solve this challenge I passed one by one of the number until find the positions.
+However the challenge description said there were more clever ways to solve, then I searched on the internet
+and found a binary search algorithm. So, I applied this new way to my resolution.
+
 ## Flowchart
 ```mermaid
 %%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
