@@ -1,4 +1,5 @@
 # Intro do Coding - Code First Girls
+![Image-CFG](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/b21bem5bicmljwcjwbxo)
 ## Challenge
 
 I'm taking some courses from **[Code First Girls](https://codefirstgirls.com/)**. This institution supports women who want to enter Tech. 
