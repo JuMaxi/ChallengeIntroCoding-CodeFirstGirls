@@ -86,4 +86,5 @@ ELSE
 	WRITE "The typed number was not found in this matrix."
 ENDIF
 ```
-
+## Source Code - C#
+**[Click here](./Problem3.cs)** to see the implementation.

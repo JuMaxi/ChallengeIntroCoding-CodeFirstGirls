@@ -69,6 +69,9 @@ WHILE FirstIndex < NumArray.Length
    	FirstIndex = FirstIndex + 1
 ENDWHILE
 RETURN NumArray
+```
+## Source Code - C#
+**[Click here](./Problem2.cs)** to see the implementation.
 
 
 
