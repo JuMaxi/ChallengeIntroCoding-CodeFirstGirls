@@ -3,8 +3,8 @@ This program will sort an array of integers in ascending order.
 
 ## Flowchart
 ```mermaid
-%%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
-flowchart TD    
+%%{ init: { 'flowchart': { 'curve': 'linear'} } }%%
+flowchart TD   
     id1([Start])
     id2["int NumArray&lbrack;&rbrack;
      int FirstIndex"]

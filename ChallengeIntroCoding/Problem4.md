@@ -7,26 +7,27 @@ Note, the limit of the numbers was limited until 25, because a greater number wo
 
 ## Flowchart
 ```mermaid
-%%{ init: { 'flowchart': { 'curve': 'linear' } } }%%
+%%{ init: { 'flowchart': { 'curve': 'linear'} } }%%
 flowchart TD
 id1([Start])
-id2["LookUpTable&lbrack;&rbrack;
+id2["LookUp&lbrack;&rbrack;
 long Factorial"]
 id3[/Input Number/]
 id4{Number != E}
-id5{LookUpTable Contains Number}
+id5{"LookUp
+has Number"}
 id7{"Number < 0 ||
  Number > 25"}
 id8[/"Return Exception"/]
 id9{Number = 0}
 id10["Factorial = 1
-LookUpTable += Factorial"]
+LookUp += Factorial"]
 id11[int N = Number - 1]
 id12{N >= 1}
 id13["Number = Number * N
 N = N - 1"]
 id14["Factorial = Number
-LookUpTable += Factorial"]
+LookUp += Factorial"]
 id15[/Print Factorial/]
 id16([End])
 
@@ -65,19 +66,19 @@ style id12 fill:#CA70E0,stroke:black,stroke-width:2px,color:black;
 
 ## Pseudo code
 ```basic
-READ LookUpTable
+READ LookUp
 READ long Factorial
 READ NumberInput
 WHILE NumberInput!= "E"
-	IF LookUpTable Contains NumberInput
-		WRITE Factorial
+	IF LookUp has NumberInput
+		WRITE Factorial from LookUp
 	ELSE
 		IF 	NumberInput < 0 or NumberInput > 25
 			RETURN Exception "The NumberInput must be greater than 0 and less or equal 25"
 		ENDIF
 		IF NumberInput = 0
 			Factorial = 1
-			LookUpTable += Factorial
+			LookUp += Factorial
 		ELSE
 			N = NumberInput - 1
 			WHILE N >= 1
@@ -86,7 +87,7 @@ WHILE NumberInput!= "E"
 			ENDWHILE
 		Factorial = NumberInput
 		ENDIF
-	LookUpTable += Factorial
+	LookUp += Factorial
 	WRITE Factorial
 	READ NumberInput
 ENDWHILE

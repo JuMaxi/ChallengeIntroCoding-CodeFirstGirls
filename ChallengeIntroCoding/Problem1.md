@@ -4,16 +4,21 @@ Depending of the grade, will delivery a message "Failed", either "Passed with Di
 
 ## Flowchart
 ```mermaid
+%%{ init: { 'flowchart': { 'curve': 'linear',"defaultRenderer": "elk" } } }%%
 flowchart TD
     id1([Start])
     id2[/Input int Grade/]
     id3{Grade < 40}
     id4[/Print Failed./]
-    id5["int NextMultipleFive = #lpar;Grade + 5#rpar; - #lpar;Grade % 5#rpar;"]
-    id6{"#lpar;NextMultipleFive - Grade#rpar; < 3"}
-    id7[Grade = NextMultipleFive]
+    id5["int MultFive = 
+    #lpar;Grade + 5#rpar; -
+    #lpar;Grade % 5#rpar;"]
+    id6{"#lpar;MultFive -
+    Grade#rpar; < 3"}
+    id7[Grade = MultFive]
     id8{Grade > 80}
-    id9[/Print Passed with Distinction!/]
+    id9[/"Print Passed
+    with Distinction!"/]
     id10[/Print Passed!/]
     id11([End])
 
@@ -47,9 +52,9 @@ READ Grade
 IF Grade < 40
 	WRITE "Failed + Grade"
 ELSE
-	NextMultipleFive = (Grade + 5) - (Grade % 5)
-	IF (NextMultipleFive - Grade) < 3
-		Grade = NextMultipleFive
+	MultFive = (Grade + 5) - (Grade % 5)
+	IF (MultFive - Grade) < 3
+		Grade = MultFive
 	ENDIF
 	IF Grade > 80
 		WRITE "Passed with Distinction + Grade"
